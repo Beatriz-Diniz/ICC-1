@@ -1,0 +1,46 @@
+1. Descrição
+A Cifra de César é uma técnica milenar de criptografia, e uma das mais simples
+de entender e aplicar. Ela recebe esse nome pois Júlio César, imperador de Roma,
+utilizava a técnica para se comunicar com seus generais por escrito sem que outras
+pessoas pudessem entender o significado da mensagem. Nessa técnica, cada letra do
+alfabeto é substituída por outra, a depender da chave dada. Se cada letra representa
+um número, de 1 a 26, soma-se a cada número a chave e transforma-se o número de
+volta em letra. Por exemplo, com a chave 3, a palavra “abacaxi” se torna “dedfdal”,
+pois “a” (1) + 3 = “d” (4), “b” + 3 = “e” (5) e assim por diante. Para mais
+informações, acesse https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar
+Implemente um programa que encripta e desencripta a Cifra de César.
+
+2. Instruções complementares
+Quando a soma da letra com a chave resultar em um número maior que o número
+de letras, deve-se retornar ao início do alfabeto:
+Chave: 5
+Frase: “xyz”
+Saída: “cde”
+Se uma mensagem é encriptada pela chave 8, utilizar a chave 8 no modo
+“desencriptar” resultará na chave mensagem original.
+3. Informações de entrada e saída
+Seu programa deve receber três valores: um valor inteiro, para informar se
+estamos encriptando ou desencriptando a mensagem (1 para encriptar, 2 para
+desencriptar), a chave da cifra e uma mensagem, que não terá mais de 100 caracteres.
+Em seguida, a saída será o a frase criptografada ou desencriptografada, de acordo
+com a opção que o usuário escolheu.
+Entrada: 
+1 
+2
+abacaxi
+Saída:
+cdceczk
+
+Entrada: 
+2 
+2
+cdceczk
+Saída:
+abacaxi
+
+Entrada: 
+2 
+2
+abacaxi
+Saída:
+yzyayvg
